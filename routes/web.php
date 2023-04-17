@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\publicController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,8 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [PublicController::class, 'home'] )->name ('homepage');
+
+Route::get('/chisiamo', [PublicController::class, 'chisiamo'] )->name ('aboutus');
+
+Route::get('/videogames', [PublicController::class, 'videogames'] )->name ('Videogames');
+
+Route::get('/feedback', [PublicController::class, 'feedback'] )->name ('Feedback');
 
 

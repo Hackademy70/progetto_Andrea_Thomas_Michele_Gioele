@@ -12,8 +12,13 @@
 <body>
     
     <x-navbar />
+    
 
     {{$slot}}
+
+    <div class="min-vh-100"></div>
+
+    <x-footer/>
 
 
 </body>

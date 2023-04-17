@@ -2,7 +2,7 @@
 
 
 
-  <!-- Full Page Image Header with Vertically Centered Content -->
+  
   <header class="masthead">
     <div class="container h-100">
       <div class="row h-100 align-items-center">
@@ -13,6 +13,28 @@
       </div>
     </div>
   </header>
+
+
+  <div class="container">
+    <div class="row">
+      
+
+        @foreach ($games as $element)
+        <div class="col-12 col-md-4 my-2">
+        <x-card
+
+        cardTitle="{{$element['title']}}"
+        cardAutore="{{$element['autore']}}"
+        cardAnno="{{$element['anno']}}"
+        cardId="{{$element['id']}}"
+        cardImg="{{$element['img']}}"
+        
+        />
+      </div>
+        @endforeach
+
+    </div>
+  </div>
   
  
 

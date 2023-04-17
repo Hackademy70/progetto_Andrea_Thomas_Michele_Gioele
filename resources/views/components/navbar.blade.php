@@ -11,7 +11,7 @@
                     <a class="nav-link active" aria-current="page" href="{{ route('homepage') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Chi siamo</a>
+                    <a class="nav-link" href="{{ route('aboutus')}}">Chi siamo</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Videogiochi</a>

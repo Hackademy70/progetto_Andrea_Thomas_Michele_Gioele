@@ -75,25 +75,25 @@ class PublicController extends Controller
         [
             'name' => 'Andrea',
             'surname' => 'Palmieri',
-            'img' => "public\img\andre.jpg",
+            'img' => "img/andre.jpg",
             'role' => 'CEO',
         ],
         [
             'name' => 'Gioele',
             'surname' => 'Coviello',
-            'img' => "https://media.licdn.com/dms/image/D4D03AQGv8A11N4bUJg/profile-displayphoto-shrink_200_200/0/1681223943837?e=1687392000&v=beta&t=U3yB2NojI1r6ueDlTXS4hmpxMRtrx5Zmpp7VSsEZkkM",
+            'img' => "img/gio.jpg",
             'role' => 'CEO',
         ],
         [
             'name' => 'Michele',
             'surname' => 'Boaretto',
-            'img' => 'https://media.licdn.com/dms/image/D4E35AQGIPR1Kx-O-gQ/profile-framedphoto-shrink_200_200/0/1681223930354?e=1682352000&v=beta&t=LFajtvDDDsnF1ujjm62bj8IF_3zc8Wl5cKokO0F0Ar8',
+            'img' => 'img/michi.jpg',
             'role' => 'CEO',
         ],
         [
             'name' => 'Thomas',
             'surname' => 'Fazziani',
-            'img' => 'https://media.licdn.com/dms/image/D4E03AQFCT7pAUqAahQ/profile-displayphoto-shrink_800_800/0/1681223386117?e=1687392000&v=beta&t=3RuM5Gap6Sk9fdE88XaBcjYRh9hchh6MYFWs0D0Dheg',
+            'img' => 'img/tom.jpg',
             'role' => 'CEO',
         ],
         ];
@@ -102,5 +102,15 @@ class PublicController extends Controller
         {
             return view('aboutus',[ 'us' => $this->us]);
         }
-}
 
+        public function videogames($id)
+        {
+            foreach($this->games as $game){
+                if ($game['id'] == $id );
+                return view('videogames',[ 'game' => $game]);
+                
+            }
+            
+        }
+
+    }

@@ -14,9 +14,6 @@
                     <a class="nav-link" href="{{ route('aboutus')}}">Chi siamo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Videogiochi</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="#">Inviaci un Feedback</a>
                 </li>
             </ul>

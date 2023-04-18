@@ -7,6 +7,6 @@
       <h5 class="card-title">{!! $cardTitle !!}</h5>
       <p class="card-text">{{$cardAutore}}</p>
       <p class="card-text">{{$cardAnno}}</p>
-      <a href="{{route ('videogames', ['id'=>$cardId]) }}" class="btn btn-primary">Go somewhere</a>
+      <a href="{{route ('videogames', ['id'=>$cardId]) }}" class="btn btn-info">Leggi di più</a>
     </div>
   </div>

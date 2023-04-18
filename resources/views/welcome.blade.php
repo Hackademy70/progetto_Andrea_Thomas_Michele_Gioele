@@ -15,12 +15,16 @@
   </header>
 
 
-  <div class="container">
+  <div class="container-fluid bg-games">
     <div class="row">
-      
+
+        <h1 class="my-5 text-center text-white">Sezione Giochi:</h2>
 
         @foreach ($games as $element)
-        <div class="col-12 col-md-4 my-2">
+        <div class="col-12 col-md-4 my-2 d-flex justify-content-center">
+
+    
+
         <x-card
 
         cardTitle="{{$element['title']}}"

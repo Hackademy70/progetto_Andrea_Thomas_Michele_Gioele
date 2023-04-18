@@ -5,4 +5,22 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
+  }
+
+  .card-img-top {
+    height: 400px;
+  }
+
+  .bg-games {
+
+      background-image: url('https://wallpaperaccess.com/full/4662263.jpg');
+      background-repeat: no-repeat;
+      background-size: cover; 
+      background-position: center center; 
+    
+      
+  
+    
+ 
   }

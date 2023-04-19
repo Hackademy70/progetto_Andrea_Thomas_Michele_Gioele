@@ -1,9 +1,9 @@
 <x-layout>
 
-    <div class="container">
-        <div class="row">
+    <div class="container-fluid bg-aboutus">
+        <div class="row w-50">
             @foreach ($us as $element)
-            <div class="col-12 col-md-6 my-3 d-flex justify-content-center">
+            <div class="col-12 col-md-6 my-3 d-flex">
                 <x-cardaboutus 
                 usName="{{$element['name']}}"
                 usSurname="{{$element['surname']}}"
@@ -12,6 +12,7 @@
                 />
             </div>
             @endforeach
+           
         </div>
     </div>
 

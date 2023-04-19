@@ -1,10 +1,10 @@
 .masthead {
-    height: 60vh;
-    min-height: 300px;
-    background-image:url('./../../public/img/videogiuoco2.jpg');
+    height: 70vh;
+    background-image:url('./../../public/img/yoschi.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
+    border: solid rgb(37, 189, 43) 3px;
     
   }
 
@@ -15,13 +15,35 @@
 
   .bg-games {
 
-      background-image:linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0.1)), url('https://wallpaperaccess.com/full/4662263.jpg');
+      background-image: url('./../../public/img/castello.jpg');
       background-repeat: no-repeat;
       background-size: cover; 
       background-position: center center; 
+      border: solid rgb(44, 222, 68) 3px;
     
-      
-  
     
  
+  }
+
+  .bg-aboutus {
+
+    background-image: url('/public/img/yoschi.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+  }
+
+  .bg-navbar {
+
+    background-color: rgba(39, 173, 12, 0.7);
+
+
+  }
+
+  .bg-footer{
+
+    background-color: rgba(39, 173, 12, 0.7);
+
+    
   }

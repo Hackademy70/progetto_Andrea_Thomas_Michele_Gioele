@@ -7,7 +7,7 @@
             <h1>{!! $game['title'] !!}</h1>
             <img class="img-fluid  w-75" src="{{$game['img']}}" alt="">
         </div>
-        <div class="col-6 d-flex align-items-center flex-column justify-content-center">
+        <div class="col-6 d-flex align-items-center flex-column justify-content-center text-center">
             <h2 class="my-3">Descrizione:</h2>
             <p>{!! $game['description'] !!}</p>
         </div>

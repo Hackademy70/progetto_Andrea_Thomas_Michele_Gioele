@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             @foreach ($us as $element)
-            <div class="col-12 col-md-6 my-3">
+            <div class="col-12 col-md-6 my-3 d-flex justify-content-center">
                 <x-cardaboutus 
                 usName="{{$element['name']}}"
                 usSurname="{{$element['surname']}}"

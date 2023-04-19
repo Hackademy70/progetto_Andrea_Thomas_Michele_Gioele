@@ -20,6 +20,8 @@ Route::get('/chisiamo', [PublicController::class, 'chisiamo'] )->name ('aboutus'
 
 Route::get('/videogames/{id}', [PublicController::class, 'videogames'] )->name ('videogames');
 
-Route::get('/feedback', [PublicController::class, 'feedback'] )->name ('Feedback');
+Route::get('/details/{genre}', [PublicController::class, 'genere'] )->name ('details');
+
+
 
 
